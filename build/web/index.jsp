@@ -33,8 +33,8 @@
     <body>
         <main>
             <form>
-                <img src="Imagem/music.png" alt="Smiley face" height="42" width="42">
 
+                <h1>Filtro</h1>
                 <!--<select id="selector" name="selector" class="form-control form-control-lg" data-style="btn-primary">
                     <option>Artista</option>
                     <option>Quantidade de tour</option>
