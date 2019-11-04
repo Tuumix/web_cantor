@@ -50,7 +50,7 @@ public class busca extends HttpServlet {
                 Document document = db.parse(new URL("http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&limit=10&api_key=917a49b4c9325caecc0bec862aae4397").openStream());
                 Element root = document.getDocumentElement();
                 NodeList n1 = root.getElementsByTagName("artist");
-                
+
                 for (int i = 0; i < n1.getLength(); i++) {
                     Element element1 = (Element) n1.item(i);
                     nome = element1.getElementsByTagName("name").item(0).getTextContent();
@@ -59,16 +59,17 @@ public class busca extends HttpServlet {
                         playcount = element1.getElementsByTagName("playcount").item(0).getTextContent();
                         listener = element1.getElementsByTagName("listeners").item(0).getTextContent();
                         url = element1.getElementsByTagName("url").item(0).getTextContent();
-
-                        Artist artista = new Artist(nome, playcount, listener, url);
-                        XStream xstream = new XStream();
-                        xstream.alias("artist", Artist.class);
-                        String xml = xstream.toXML(artista);
-                        out.println(xml);
+                        resultado += "<div>";
+                        resultado += "<p>Nome: " + nome + "</p>";
+                        resultado += "<p>PlayCount: " + playcount + "</p>";
+                        resultado += "<p>Listeners: " + listener + "</p>";
+                        resultado += "<a href="+url+">URL</a>";
+                        resultado += "</div>";
+                        out.println(resultado);
                     }
                 }
                 if (!found) {
-                    out.println("<h1>Não encontrado</h1>");
+                    out.println("Não encontrado");
                 }
 
             } catch (Exception e) {

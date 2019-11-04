@@ -48,9 +48,6 @@
                 </div>     
             </form>
             <div id="resultado" class="div-form-dir">
-                <textarea id="teste" readonly>
-                    
-                </textarea>
             </div>
         </main>
         <script src="JS/script.js" type="text/javascript"></script>

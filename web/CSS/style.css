@@ -34,6 +34,11 @@ h1{
     color: #dfe6e9;
 }
 
+p{
+    font-size: 20px;
+    color: lightblue;
+}
+
 body{
     background-color: #2f3640;
     width: 100%;
