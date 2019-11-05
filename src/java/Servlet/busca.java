@@ -5,8 +5,6 @@
  */
 package Servlet;
 
-import Tools.Artist;
-import com.thoughtworks.xstream.XStream;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -60,10 +58,10 @@ public class busca extends HttpServlet {
                         listener = element1.getElementsByTagName("listeners").item(0).getTextContent();
                         url = element1.getElementsByTagName("url").item(0).getTextContent();
                         resultado += "<div>";
-                        resultado += "<p>Nome: " + nome + "</p>";
-                        resultado += "<p>PlayCount: " + playcount + "</p>";
-                        resultado += "<p>Listeners: " + listener + "</p>";
-                        resultado += "<a href="+url+">URL</a>";
+                        resultado += "<p><label>Nome : </label> " + nome + "</p>";
+                        resultado += "<p><p><label>PlayCount : </label> " + playcount + "</p>";
+                        resultado += "<p><p><label>Listeners : </label> " + listener + "</p>";
+                        resultado += "<label>URL : <label><a href="+url+">"+url+"</a></label></label>";
                         resultado += "</div>";
                         out.println(resultado);
                     }

@@ -39,6 +39,12 @@ p{
     color: lightblue;
 }
 
+label{
+    font-size: 25px;
+    font-style: italic;
+    color: lightblue;
+}
+
 body{
     background-color: #2f3640;
     width: 100%;
@@ -83,9 +89,9 @@ form{
 
 .div-form-dir{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     width: 80%;
     height: 500px;
     background-color: #222f3e;
@@ -104,4 +110,9 @@ main form select{
 
 div input{
     size: 30px;
+}
+.div-resultado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

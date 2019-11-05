@@ -34,7 +34,7 @@
         <main>
             <form>
 
-                <h1>Filtro</h1>
+                <h1>Artista</h1>
                 <!--<select id="selector" name="selector" class="form-control form-control-lg" data-style="btn-primary">
                     <option>Artista</option>
                     <option>Quantidade de tour</option>
@@ -48,6 +48,7 @@
                 </div>     
             </form>
             <div id="resultado" class="div-form-dir">
+                <div id="resultado">hvvjhvjh</div>
             </div>
         </main>
         <script src="JS/script.js" type="text/javascript"></script>
